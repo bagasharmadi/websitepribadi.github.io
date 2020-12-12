@@ -1,6 +1,6 @@
 #header {background:#ffffcc;
     width: 1200px;
-    height:180px; 
+    height:100px; 
     margin: auto;
     overflow: hidden;}
 #wrap {background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/background-simple-keren-10.jpg);
@@ -12,25 +12,52 @@
 .menu1 {width: 1000px;
     margin:0 auto;}
 
+nav{height: 80px;
+    width: 100%;}
 
-@media(max-width:720px){
-    .menu1 {
-        width: 25%;
-        margin:0 auto;
-        float: left;}}
-@media(min-width:720px) and (max-width:992px){
-    .menu1 {
-        width: 25%;
-        margin:0 auto;
-        float: left;}}
+label.logo{font-size: 35px; 
+        font-weight: bold;
+        color:blue;
+        padding: 0 100px;
+        line-height: 80px;}
+nav ul {float:right;
+    margin-right: 40px;}
+
+nav li {display:inline-block;
+    margin: 0 8px;
+    line-height: 80px;}
+
+nav a{color:green;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    text-decoration: none;}
+    
+a.active,a:hover{
+    border: 1px solid red;
+    transition: .5s;}
+
+nav #icon{
+    color: black;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width:1200px){
+    label.logo{font-size:32px;
+    padding-left: 60px;}
+    nav ul{margin-right:20px}
+    nav a{font-size: 17px;
+    }
+}
 
 
 
 
 .menu1:after{content:'';display: block;clear: both;}
-h1 {float: left;padding: 0px 0;color:black;}
-ul  {float: right;}
-ul li {display: inline-block;}
-a {text-decoration: none; color: black;}
-ul li a:hover {background-color:  white;color: white;}
-
