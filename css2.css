@@ -1,0 +1,36 @@
+#header {background:#ffffcc;
+    width: 1200px;
+    height:180px; 
+    margin: auto;
+    overflow: hidden;}
+#wrap {background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/background-simple-keren-10.jpg);
+    width: 1200px;
+    height: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0px 0;}
+.menu1 {width: 1000px;
+    margin:0 auto;}
+
+
+@media(max-width:720px){
+    .menu1 {
+        width: 25%;
+        margin:0 auto;
+        float: left;}}
+@media(min-width:720px) and (max-width:992px){
+    .menu1 {
+        width: 25%;
+        margin:0 auto;
+        float: left;}}
+
+
+
+
+.menu1:after{content:'';display: block;clear: both;}
+h1 {float: left;padding: 0px 0;color:black;}
+ul  {float: right;}
+ul li {display: inline-block;}
+a {text-decoration: none; color: black;}
+ul li a:hover {background-color:  white;color: white;}
+
